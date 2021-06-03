@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   #  s.source_files = 'classes/core/**/*'
-  s.source_files = 'classes/core/**/*.{h,m}'
+  s.source_files = 'classes/core/**/*.txt'
   
   # s.resource_bundles = {
   #   'ZHCommon' => ['ZHCommon/Assets/*.png']
