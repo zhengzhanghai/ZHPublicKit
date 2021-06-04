@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   end
 
   # 创建子目录的子目录
-  ss.subspec 'txt' da |sss|
+  ss.subspec 'txt' do |sss|
     sss.source_files = 'classes/core/**/*.txt'
   end 
   
