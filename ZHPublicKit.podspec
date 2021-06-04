@@ -24,12 +24,12 @@ Pod::Spec.new do |s|
 
   # 建立一个子目录core
   s.subspec 'core' do |ss|
-    # ss.source_files = 'classes/core/**/*.txt'
+    ss.source_files = 'classes/core/**/*.txt'
   end
 
   # 创建子目录的子目录
   ss.subspec 'txt' do |sss|
-    sss.source_files = 'classes/core/**/*.txt'
+    sss.source_files = 'classes/sub/**/*.txt'
   end 
   
   # s.resource_bundles = {
