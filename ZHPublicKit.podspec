@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 
     ss.subspec 'Test1' do |sss|
       sss.source_files = 'classes/frameworks/2/*'
-      sss.vendored_frameworks = 'classes/frameworks/1/Test__1.framework'
+      sss.vendored_frameworks = 'classes/frameworks/2/Test__1.framework'
     end
   end
 
