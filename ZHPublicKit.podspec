@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZHPublicKit'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'ZHPublicKit发布各种公有库测试'
   s.description      = "ZHPublicKit，库依赖、创建子文件夹、子文件夹依赖、加路径下载等等的一个测试"
   s.homepage         = 'https://github.com/zhengzhanghai/ZHPublicKit'
@@ -37,11 +37,13 @@ Pod::Spec.new do |s|
 
   s.subspec 'other' do |ss|
     ss.subspec 'Test' do |sss|
-      sss.source_files = 'classes/frameworks/Test.{h,framework}'
+      sss.source_files = 'classes/frameworks/Test.h'
+      sss.frameworks = 'Test'
     end
 
     ss.subspec 'Test1' do |sss|
-      sss.source_files = 'classes/frameworks/Test__1.{h,framework}'
+      sss.source_files = 'classes/frameworks/Test__1.h'
+      sss.frameworks = 'Test__1'
     end
   end
 
