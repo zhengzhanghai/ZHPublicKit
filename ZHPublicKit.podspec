@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZHPublicKit'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'ZHPublicKit发布各种公有库测试'
   s.description      = "ZHPublicKit，库依赖、创建子文件夹、子文件夹依赖、加路径下载等等的一个测试"
   s.homepage         = 'https://github.com/zhengzhanghai/ZHPublicKit'
@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   # s.source_files = 'classes/core/**/*.txt'
 
+  # 添加依赖库
   s.dependency "ZHCommon", "~> 1.0.0"
 
   # 建立一个子目录core
@@ -32,6 +33,23 @@ Pod::Spec.new do |s|
     ss.subspec 'txt' do |sss|
       sss.source_files = 'classes/sub/**/*.txt'
     end 
+  end
+
+
+  s.subspec 'other' do |ss|
+    ss.dependency 'ZHPublicKit/Lib'
+
+    ss.subspec 'Test' do |sss|
+      sss.vendored_libraries = 'classes/frameworks/Test.framework'
+      sss.source_files = 'classes/frameworks/Test.h'
+      sss.public_header_files = 'classes/frameworks/Test.h'
+    end
+
+    ss.subspec 'Test1' do |sss|
+      sss.vendored_libraries = 'classes/frameworks/Test__1.framework'
+      sss.source_files = 'classes/frameworks/Test__1.h'
+      sss.public_header_files = 'classes/frameworks/Test__1.h'
+    end
   end
 
   
