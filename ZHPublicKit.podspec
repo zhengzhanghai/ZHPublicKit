@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZHPublicKit'
-  s.version          = '0.2.6'
+  s.version          = '0.2.7'
   s.summary          = 'ZHPublicKit发布各种公有库测试'
   s.description      = "ZHPublicKit，库依赖、创建子文件夹、子文件夹依赖、加路径下载等等的一个测试"
   s.homepage         = 'https://github.com/zhengzhanghai/ZHPublicKit'
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.requires_arc = true
   # s.source_files = 'classes/core/**/*.txt'
 
   # 添加依赖库
