@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
 
   s.subspec 'other' do |ss|
     ss.subspec 'Test' do |sss|
-      sss.source_files = 'classes/frameworks/1/StaticLib.framework'
-      sss.vendored_frameworks = 'classes/frameworks/1/Test.h'
+      sss.source_files = 'classes/frameworks/1/Test.h'
+      sss.vendored_frameworks = 'classes/frameworks/1/StaticLib.framework'
       sss.frameworks = 'Foundation'
       # sss.ios.vendored_frameworks = 'classes/frameworks/1/UMDevice.framework'
       # sss.frameworks = 'Foundation'
