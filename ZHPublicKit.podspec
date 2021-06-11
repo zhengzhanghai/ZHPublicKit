@@ -9,7 +9,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZHPublicKit'
+<<<<<<< HEAD
   s.version          = '0.3.1'
+=======
+  s.version          = '0.3.0'
+>>>>>>> c238bda5227beab57b88363cbed3c150384faf8a
   s.summary          = 'ZHPublicKit发布各种公有库测试'
   s.description      = "ZHPublicKit，库依赖、创建子文件夹、子文件夹依赖、加路径下载等等的一个测试"
   s.homepage         = 'https://github.com/zhengzhanghai/ZHPublicKit'
@@ -43,11 +47,11 @@ Pod::Spec.new do |s|
       # sss.frameworks = 'Foundation'
     end
 
-    # ss.subspec 'Test1' do |sss|
-    #   sss.source_files = 'classes/frameworks/2/*'
-    #   sss.ios.vendored_frameworks = 'classes/frameworks/2/Test__1.framework'
-    #   sss.frameworks = 'Foundation'
-    # end
+    ss.subspec 'Test1' do |sss|
+      sss.source_files = 'classes/frameworks/2/*'
+      # sss.ios.vendored_frameworks = 'classes/frameworks/2/Test__1.framework'
+      # sss.frameworks = 'Foundation'
+    end
   end
 
   
